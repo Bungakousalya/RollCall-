@@ -15,23 +15,6 @@ Problem	How SmartFace Solves It
 
 SmartFace runs on two core microservices to separate heavy ML tasks from API responsibilities.
 
-                        ┌──────────────────────┐
-                        │   Frontend (App)     │
-                        └──────────┬───────────┘
-                                   │ REST + WebSocket
-        ┌──────────────────────────┴──────────────────────────┐
-        │                                                     │
-┌───────────────┐                                 ┌──────────────────────┐
-│ Node.js API   │                                 │ Python ML Service    │
-│ (Express.js)  │◄────────── images ─────────────►│ (Flask + DeepFace)   │
-└──────┬────────┘                                 └──────────┬───────────┘
-       │  JWT Auth / Goals / Timetable                        │
-       │                                                      │
-       ▼                                                      ▼
-┌───────────────┐                                    ┌────────────────────┐
-│   MongoDB      │                                    │ Local File Storage │
-└───────────────┘                                    └────────────────────┘
-
 🧠 Technologies Used
 Backend API (Service 1 – Node.js)
 
@@ -93,33 +76,9 @@ Free time in daily timetable
 Auto-generated routine combining classes + personal learning goals
 
 🔔 Realtime Notifications
-
 Attendance changes
-
 Correction alerts
-
 Daily routine suggestions
-
-🗂 Folder Structure (Recommended)
-SmartFace/
-│
-├── backend-api/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── routes/
-│   │   ├── models/
-│   │   ├── utils/
-│   │   └── socket/
-│   ├── uploads/
-│   └── server.js
-│
-├── face-recognition/
-│   ├── app.py
-│   ├── embeddings/
-│   ├── detection/
-│   └── utils/
-│
-└── README.md
 
 🛠 Installation & Setup
 1️⃣ Clone the Project
