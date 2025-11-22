@@ -15,6 +15,7 @@ Problem	How SmartFace Solves It
 SmartFace runs on two core microservices to separate heavy ML tasks from API responsibilities.
 
 🧠 Technologies Used
+
 Backend API (Service 1 – Node.js)
 Express.js
 JWT Authentication
@@ -35,6 +36,7 @@ Local File System (student images, classroom photos)
 ✨ Features
 
 🎯 AI Attendance:
+
 Upload class photo → Model detects all faces → Matches with student embeddings
 Sends attendance instantly to backend
 Real-time status through Socket.io
@@ -54,6 +56,7 @@ Correction alerts
 Daily routine suggestions
 
 🛠 Installation & Setup
+
 1️⃣ Clone the Project
 git clone https://github.com/yourusername/smartface.git
 cd smartface
@@ -82,15 +85,21 @@ python app.py
 🌐 API Overview:
 
 Students
+
 POST /api/students
+
 GET  /api/students
+
 POST /api/students/upload-photo
 
 Authentication
+
 POST /api/auth/login
 
 Attendance
+
 POST /api/attendance/class-photo
+
 GET  /api/attendance/today
 
 Goals & Routine
@@ -98,6 +107,7 @@ POST /api/goals
 GET  /api/routine
 
 🧪 Real-Time Events (Socket.io)
+
 Event	Description
 attendance:update	Student attendance updated
 attendance:corrected	Admin corrected a record
@@ -114,6 +124,7 @@ Return recognized student IDs
 Node.js logs attendance + broadcasts updates
 
 📈 Future Enhancements:
+
 Cloudinary image hosting
 Emotion detection (engagement level)
 Auto-sync with LMS systems
