@@ -33,6 +33,7 @@ MongoDB (Attendance Logs, Students, Goals, Schedules)
 Local File System (student images, classroom photos)
 
 ✨ Features
+
 🎯 AI Attendance:
 Upload class photo → Model detects all faces → Matches with student embeddings
 Sends attendance instantly to backend
