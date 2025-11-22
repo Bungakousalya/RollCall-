@@ -6,11 +6,14 @@ A dual-service backend combining high-performance Deep Learning (ArcFace + DeepF
 
 SmartFace solves the biggest inefficiencies in schools and colleges:
 
-Problem	How SmartFace Solves It
+Problem	and How SmartFace Solves It
 
 ⏳ Slow & error-prone manual attendance	:Fully automated attendance using DeepFace facial recognition
+
 😶‍🌫️ Unproductive student free hours :Personalized tasks based on student goals
+
 🎯 Students lacking clarity in routine & goals	:Auto-generated daily routines mixing timetable + self-learning goals
+
 🕒 Delayed data and updates	:Real-time attendance broadcast via Socket.io
 
 ⚙️ Core Architecture
