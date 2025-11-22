@@ -79,7 +79,8 @@ cd face-recognition
 pip install -r requirements.txt
 python app.py
 
-🌐 API Overview
+🌐 API Overview:
+
 Students
 POST /api/students
 GET  /api/students
@@ -103,6 +104,7 @@ attendance:corrected	Admin corrected a record
 routine:new	New personalized routine generated
 
 📸 Face Recognition Workflow:
+
 Admin uploads student images
 Python service generates embeddings using ArcFace
 During class photo upload:
