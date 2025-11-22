@@ -5,7 +5,6 @@ A dual-service backend combining high-performance Deep Learning (ArcFace + DeepF
 🚀 Vision: Fixing the Education Efficiency Gap
 
 SmartFace solves the biggest inefficiencies in schools and colleges:
-
 Problem	How SmartFace Solves It
 ⏳ Slow & error-prone manual attendance	Fully automated attendance using DeepFace facial recognition
 😶‍🌫️ Unproductive student free hours	Personalized tasks based on student goals
@@ -17,64 +16,37 @@ SmartFace runs on two core microservices to separate heavy ML tasks from API res
 
 🧠 Technologies Used
 Backend API (Service 1 – Node.js)
-
 Express.js
-
 JWT Authentication
-
 MongoDB
-
 Socket.io (real-time updates)
-
 Timetable merging + personalized routine generator
 
 Face Recognition Service (Service 2 – Python)
-
 Flask
-
 DeepFace
-
 ArcFace model (high-accuracy feature extraction)
-
 OpenCV
-
 Face detection + embedding + verification
 
-Storage
-
 MongoDB (Attendance Logs, Students, Goals, Schedules)
-
 Local File System (student images, classroom photos)
 
 ✨ Features
-🎯 AI Attendance
-
+🎯 AI Attendance:
 Upload class photo → Model detects all faces → Matches with student embeddings
-
 Sends attendance instantly to backend
-
 Real-time status through Socket.io
-
 🧑‍🏫 Admin Tools
-
 Upload Excel files for Teachers/Timetables
-
 Manage students, images & goal data
-
 Correct or override attendance
-
 📅 Personalized Guidance System
-
 Suggests tasks based on:
-
 Student goals
-
 Past activity
-
 Free time in daily timetable
-
 Auto-generated routine combining classes + personal learning goals
-
 🔔 Realtime Notifications
 Attendance changes
 Correction alerts
@@ -123,40 +95,24 @@ Goals & Routine
 POST /api/goals
 GET  /api/routine
 
-
-(I can generate full OpenAPI documentation if you want.)
-
 🧪 Real-Time Events (Socket.io)
 Event	Description
 attendance:update	Student attendance updated
 attendance:corrected	Admin corrected a record
 routine:new	New personalized routine generated
-📸 Face Recognition Workflow
 
+📸 Face Recognition Workflow:
 Admin uploads student images
-
 Python service generates embeddings using ArcFace
-
 During class photo upload:
-
 Detect all faces
-
 Compare embeddings
-
 Return recognized student IDs
-
 Node.js logs attendance + broadcasts updates
 
-📈 Future Enhancements
-
+📈 Future Enhancements:
 Cloudinary image hosting
-
-Attendance analytics dashboard
-
-Automatic goal progression reports
-
 Emotion detection (engagement level)
-
 Auto-sync with LMS systems
 
 🤝 Contributing
